@@ -1,4 +1,4 @@
-# 🚀 Real-Time Image Classification with Inference Latency Analysis Using Pretrained Deep Learning Models
+ # 🚀 Real-Time Image Classification with Inference Latency Analysis Using Pretrained Deep Learning Models
 
 ## 📌 Project Overview
 
