@@ -1,10 +1,17 @@
 import torch
 import torchvision.transforms as transforms
+from torchvision.models import resnet50
 from PIL import Image
 import time
 
-# Load pretrained ResNet50
-model = torch.hub.load("pytorch/vision:v0.10.0", "resnet50", pretrained=True)
+# Load model architecture
+model = resnet50()
+
+# Load weights from LOCAL file (no internet needed)
+model.load_state_dict(torch.load(
+    "C:/Users/Hp/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth"
+))
+
 model.eval()
 
 # ImageNet preprocessing
